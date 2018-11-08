@@ -24,6 +24,9 @@ clf = clf.fit(X,Y)
 prediction = clf.predict([[190,70,43]])
 
 # Print to terminal
+# Creates data
+# graph reners into pdf
+
 print (prediction)
 dot_data = tree.export_graphviz(clf, out_file=None) 
 graph = graphviz.Source(dot_data) 

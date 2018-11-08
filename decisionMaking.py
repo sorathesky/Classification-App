@@ -1,6 +1,7 @@
 from sklearn import tree
 import importlib
 import graphviz 
+import os
 
 # [height, weight, shoe size]
 X = [[181,80,44], [117,70,43], [160,60,38], [154,54,37],
@@ -23,15 +24,9 @@ clf = clf.fit(X,Y)
 prediction = clf.predict([[190,70,43]])
 
 # Print to terminal
-#print (prediction)
+print (prediction)
 dot_data = tree.export_graphviz(clf, out_file=None) 
 graph = graphviz.Source(dot_data) 
 graph.render("iris")
 
-dot_data = tree.export_graphviz(clf, out_file=None, 
-                         feature_names=iris.feature_names,  
-                         class_names=iris.target_names,  
-                         filled=True, rounded=True,  
-                         special_characters=True)
-graph = graphviz.Source(dot_data)
-graph
+os.system('iris.pdf')

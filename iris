@@ -3,7 +3,7 @@ node [shape=box] ;
 0 [label="X[1] <= 77.5\ngini = 0.496\nsamples = 11\nvalue = [5, 6]"] ;
 1 [label="X[1] <= 67.5\ngini = 0.469\nsamples = 8\nvalue = [5, 3]"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="X[0] <= 163.0\ngini = 0.48\nsamples = 5\nvalue = [2, 3]"] ;
+2 [label="X[2] <= 38.5\ngini = 0.48\nsamples = 5\nvalue = [2, 3]"] ;
 1 -> 2 ;
 3 [label="X[1] <= 54.5\ngini = 0.444\nsamples = 3\nvalue = [2, 1]"] ;
 2 -> 3 ;
